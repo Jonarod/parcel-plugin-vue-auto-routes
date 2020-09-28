@@ -1,6 +1,6 @@
 {
   "name": "parcel-plugin-vue-auto-routes",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Parcel plugin to generate Vue.js routes automatically.",
   "main": "index.js",
   "scripts": {

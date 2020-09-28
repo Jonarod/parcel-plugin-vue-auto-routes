@@ -16,16 +16,19 @@ module.exports = async bundler => {
 
     const code = generateRoutes(defaultConfig)
 
-    fs.readFile(outputFile, 'utf8', function (err,data) {
-      if (err) {
-        return console.log(err);
-      }
+    if (fs.existsSync(outputFile)) {
+      fs.readFile(outputFile, 'utf8', function (err,data) {
+        if (err) {
+          return console.log(err);
+        }
+        if(data != code){
+          fs.writeFileSync(outputFile, code)
+        }
+      });
+    } else {
+      fs.writeFileSync(outputFile, code)
+    }
 
-      if(data != code){
-        fs.writeFileSync(outputFile, code)
-      }
-  
-    });
 
   })
 
