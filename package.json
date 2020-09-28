@@ -1,0 +1,26 @@
+{
+  "name": "parcel-plugin-vue-auto-routes",
+  "version": "0.0.1",
+  "description": "Parcel plugin to generate Vue.js routes automatically.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "vue-router",
+    "vue",
+    "parcel",
+    "parcel-bundler",
+    "parcel-plugin"
+  ],
+  "author": "Jonarod",
+  "license": "MIT",
+  "peerDependencies": {
+    "parcel-bundler": "^1.11.0"
+  },
+  "devDependencies": {
+    "jest": "^25.1.0",
+    "parcel-bundler": "^1.12.4",
+    "prettier": "^2.0.1"
+  }  
+}
