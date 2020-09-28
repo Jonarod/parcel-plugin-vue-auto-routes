@@ -13,3 +13,9 @@ npm i -D parcel-plugin-vue-auto-routes
 ## How to
 
 This plugins looks for Vue components in a `./pages` directory, then scaffolds `vue-router` routes to the app. 
+
+
+## Known bugs
+
+Needs to restart dev server on page add/delete... (HMR watcher not consistent)
+
